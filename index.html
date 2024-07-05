@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/media/favicon.png">
+    <meta name="author" content="Team 5">
+    <meta name="description" content="Propgetto Build Week 1">
+</head>
+
+<body>
+    <header id="header1">
+        <img id="logo1" src="./assets/media/epicode_logo.png" alt="logo epicode">
+    </header >
+    <div id="container">
+       
+        <main id="main1">
+            <div id="title">
+                <h1>Welcome to <br><span class="spantext">your exam</span></h1>
+            </div>
+            <div id="subtitle">
+                <h2>Instructions</h2>
+                <p>We don't expect most engineers to know the answers to all of these <br>questions, so don't worry if
+                    you're unsure
+                    of a few of them.</p>
+            </div>
+            <div id="list">
+                <ul>
+                    <li>Each question is <span class="spantext">timed</span> and can only be <span
+                            class="spantext">answered
+                            once</span>.</li>
+                    <li>Changing browser tab or opening other windows will <span class="spantext">invalidate the
+                            question</span>.</li>
+                    <li>This exam will take approx. <span class="spantext">0-5 minutes</span>.</li>
+                </ul>
+            </div>
+         
+        </main >
+        <div id="final">
+            <div id="check">
+                <!-- div creato per l'introduzione della spunta che ottiene le proprietà al suo azionamento, l'idea è stata asportata direttamente dal sito di Epicode -->
+                <div class="MuiListItemIcon-root css-14mnu5v">
+                    <span
+                        class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-gt5y77"
+                        role="checkbox" data-testid="checkbox-2827">
+                        <input id="myCheckbox" name="myCheckbox" class="PrivateSwitchBase-input css-1m9pwf3" type="checkbox" data-indeterminate="false" value="2827">
+                        <svg  id="vuoto" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="disabled"
+                        font-size="medium" height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z">
+                        </path>
+                    </svg >
+                        <svg id="pieno" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="primary"
+                            font-size="medium" height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                            <path
+                                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+                <!-- input necessario all'abilitazione del bottone che porta al quiz -->
+                <label for="myCheckbox">I promise to answer myself without help from anyone</label>
+            </div>
+            <div id="submit">
+                <a href="benchmark.html" id="link"> <button type="button" id="btnProceed"
+                        disabled>PROCEED</button></a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./assets/js/welcome.js"></script>
+</body>
+
+</html>

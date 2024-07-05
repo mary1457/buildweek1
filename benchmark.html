@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/media/favicon.png">
+    <meta name="author" content="Team 5">
+    <meta name="description" content="Propgetto Build Week 1">
+</head>
+
+<body>
+
+    <header id="header1">
+        <div id="header2"><img id="logo2" src="./assets/media/epicode_logo.png" alt="logo epicode">
+        </div>
+            <!-- Serie di container che applicano il timer alla struttura -->
+        
+                <div class="base-timer" id="chartContainer">
+                    <svg class="base-timer__svg" viewBox="15.5 0 130 130" xmlns="http://www.w3.org/2000/svg">
+                        <g class="base-timer__circle">
+                            <circle class="base-timer__path-elapsed" cx="50" cy="50"></circle>
+                            <text id="base-timer-label"  x="60%" y="50%" text-anchor="middle" dy=".3em" font-size="20" fill="white"></text>
+                            <!-- Il tag path definisce una traccia di disegno utilizzando comandi come movimento, linee e curve -->
+                            <path id="base-timer-path-remaining" stroke-dasharray="283"
+                                class="base-timer__path-remaining full" d="
+                                M 65, 50
+                                m -45, 0
+                                a 45,45 0 1,0 90,0
+                                a 45,45 0 1,0 -90,0
+                            "></path>
+                        </g>
+                    </svg>
+                    <!-- <span id="base-timer-label" class="base-timer__label">10</span> -->
+                </div>
+    
+    </header>
+    <div id="container">
+        <main id="main1">
+            <div class="quiz-container">
+                <div id="question-container" class="question-container">
+                    <div id="question">
+                        <!-- qui js inserisce la domanda -->
+                    </div>
+                    <div id="answer-buttons"></div>
+                </div>
+              
+        </main>
+        <div id="final2">
+            <button id="btnProceed" disabled>PROCEED</button>
+        </div>
+        <div id="result" class="result"></div>
+        <div> <p id="questionCounter">QUESTION 1<span>/10</span></p></div>
+       
+    </div>
+    </div>
+    <script src="/assets/js/benchmark.js"></script>
+</body>
+
+</html>
